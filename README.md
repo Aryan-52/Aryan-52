@@ -30,7 +30,7 @@ const aryan = {
   interests:  ["Software engineering", "AI & LLMs", "Cloud & DevOps", "System design"],
   building:   "XForensics — explainable AI for detecting AI-generated images",
   approach:   "Learn by building real projects that solve real problems",
-  openTo:     ["Internships", "Hackathons", "Collaborations"],
+  openTo:     ["Collaborations", "Hackathons"],
 };
 ```
 
