@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 90" width="1200" height="90" role="img" aria-label="Thanks for visiting">
+  <defs>
+    <filter id="g" x="-10%" y="-200%" width="120%" height="500%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <linearGradient id="beam" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ff2d2d" stop-opacity="0"/>
+      <stop offset="30%" stop-color="#ff2d2d"/>
+      <stop offset="50%" stop-color="#ffb547"/>
+      <stop offset="70%" stop-color="#f2ede0"/>
+      <stop offset="100%" stop-color="#f2ede0" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <style>
+    .t { font: 600 15px Consolas,'SF Mono',Menlo,'Courier New',monospace; letter-spacing: 6px; }
+    .dot { animation: run 4s linear infinite; }
+    @keyframes run { from { transform: translateX(0) } to { transform: translateX(1000px) } }
+    .c { animation: blink 1s steps(1) infinite; }
+    @keyframes blink { 50% { opacity: 0 } }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+  </style>
+  <rect width="1200" height="90" fill="#0a0a0c"/>
+  <rect x="100" y="28" width="1000" height="2" fill="url(#beam)" filter="url(#g)"/>
+  <circle class="dot" cx="100" cy="29" r="4" fill="#ffffff" filter="url(#g)"/>
+  <text x="600" y="66" text-anchor="middle" class="t" fill="#8b949e">&gt; EXIT 0 · THANKS FOR VISITING<tspan class="c" fill="#ff2d2d"> ▋</tspan></text>
+</svg>
